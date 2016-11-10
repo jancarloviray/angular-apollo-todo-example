@@ -1,7 +1,8 @@
 import { ApolloClient, createNetworkInterface } from 'apollo-client';
 
-const networkInterface =
-  createNetworkInterface('https://api.graph.cool/simple/v1/__PROJECT_ID__');
+const networkInterface = createNetworkInterface({
+  uri: 'https://api.graph.cool/simple/v1/__PROJECT_ID__'
+});
 
 // The x-graphcool-source header is to let the server know that the example app has started.
 // (Not necessary for normal projects)

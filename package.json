@@ -13,8 +13,8 @@
     "@angular/forms": "~2.1.0",
     "@angular/platform-browser": "~2.1.0",
     "@angular/platform-browser-dynamic": "~2.1.0",
-    "angular2-apollo": "~0.6.0",
-    "apollo-client": "~0.5.0",
+    "angular2-apollo": "~0.8.0",
+    "apollo-client": "~0.5.1",
     "es6-shim": "^0.35.1",
     "isomorphic-fetch": "^2.2.1",
     "reflect-metadata": "^0.1.8",
@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",
-    "@types/es6-shim": "^0.31.32",
     "@types/isomorphic-fetch": "0.0.31",
     "copyfiles": "^1.0.0",
     "css-loader": "^0.25.0",

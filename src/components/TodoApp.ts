@@ -4,6 +4,8 @@ import { ApolloQueryResult } from 'apollo-client';
 
 import gql from 'graphql-tag';
 
+import 'rxjs/add/operator/toPromise';
+
 @Component({
   selector: 'todo-app',
   template: `
@@ -66,7 +68,7 @@ export default class TodoApp implements OnInit {
         }
       `,
       variables: { text },
-    });
+    }).toPromise();
   }
 
   rename({ todo, text }) {
@@ -80,7 +82,7 @@ export default class TodoApp implements OnInit {
         id: todo.id,
         text,
       },
-    });
+    }).toPromise();
   }
 
   toggle({ todo, complete }) {
@@ -94,7 +96,7 @@ export default class TodoApp implements OnInit {
         id: todo.id,
         complete,
       },
-    });
+    }).toPromise();
   }
 
   delete({ todo }) {
@@ -107,6 +109,6 @@ export default class TodoApp implements OnInit {
       variables: {
         id: todo.id,
       },
-    });
+    }).toPromise();
   }
 }
