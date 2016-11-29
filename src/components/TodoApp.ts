@@ -17,7 +17,7 @@ import 'rxjs/add/operator/toPromise';
         </add-todo>
       </header>
       <todo-list
-        [todos]="todos | async | select: 'allTodos'"
+        [todos]="todos | async | select: 'allTodoes'"
         [filter]="filter"
         (renameTodo)="rename($event)"
         (deleteTodo)="delete($event)"
